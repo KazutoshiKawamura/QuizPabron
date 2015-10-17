@@ -55,9 +55,9 @@ class QuizViewController: UIViewController {
         quizTextView.text = quizArray[0][0] as! String
         
         //選択肢のボタンにそれぞれ選択肢のテキストをセット
-        choiceButtons1.setTitle(quizArray[0][1] as? String, forState: .Normal)
-        choiceButtons2.setTitle(quizArray[0][2] as? String, forState: .Normal)
-        choiceButtons3.setTitle(quizArray[0][3] as? String, forState: .Normal)
+        choiceButtons1.setTitle((quizArray[0][1] as! String), forState: .Normal)
+        choiceButtons2.setTitle((quizArray[0][2] as! String), forState: .Normal)
+        choiceButtons3.setTitle((quizArray[0][3] as! String), forState: .Normal)
     }
     
     @IBAction func choiceAnswer(sender: UIButton) {
